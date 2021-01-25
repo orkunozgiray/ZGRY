@@ -1,24 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Home from './pages';
+import SignIn from './pages/signin';
+import CollectionP from './pages/collectionpage';
+import WomenP from './pages/women';
+import MenP from './pages/men';
+import MagazineP from './pages/magazine';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Switch>
+        <Route path='/' component={Home} exact />
+        <Route path='/signin' component={SignIn} exact />
+        <Route path='/collectionpage' component={CollectionP} exact />
+        <Route path='/women' component={WomenP} exact />
+        <Route path='/men' component={MenP} exact />
+        <Route path='/magazine' component={MagazineP} exact />
+      </Switch>
+    </Router>
   );
 }
 
