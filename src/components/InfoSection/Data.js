@@ -4,7 +4,7 @@ export const homeObjOne = {
     lightText: true,
     lighTextDesc: true,
     topLine: 'zgry',
-    headline: 'Discover A Fresh Brand',
+    headline: 'Discover A Freshh Brand',
     description: 'Hundreds of clothes are waiting for you!',
     buttonLabel: 'Discover',
     imgStart: true,
